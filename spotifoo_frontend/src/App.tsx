@@ -1,27 +1,19 @@
+//project files
 import React from 'react';
-import logo from './logo.svg';
-import './Styles/App.css';
+import Card from './components/card';
 
-function App() {
+import './styles/App.css';
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h1 color='red' >welcome to mucisc app </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>welcome to Spotifoo </h1>
+      <p>
+        happy coding and ruining and bleeeding!!🍕
+      </p>
+      <Card />
     </div>
   );
 }
 
-export default App;
+
