@@ -1,18 +1,30 @@
 //project files
-import React from 'react';
-import Card from './components/card';
-
+import React, { useState ,useEffect } from 'react';
+import Card from './components/Card';
+import data from './data/music.json';
 import './styles/App.css';
+import NavBar from './components/NavBar';
+
 
 export default function App() {
-  return (
-    <div className="App">
-      <h1>welcome to Spotifoo </h1>
-      <p>
-        happy coding and ruining and bleeeding!!🍕
-      </p>
-      <Card />
-    </div>
+  // local state
+  const [data,setData]= useState();
+  
+
+ 
+  //useEffect(()=>{
+   
+    //fetch('http://localhost:8080/music/')
+ // .then (response => response.json())
+  //.then(setData)
+ // },[])
+
+    return (
+      <div className="App" >
+     <NavBar/>
+     
+     </div>
+      
   );
 }
 
