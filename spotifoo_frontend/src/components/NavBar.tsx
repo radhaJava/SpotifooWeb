@@ -1,8 +1,8 @@
-import logo from './assets/logo.png';
-import home from "./assets/icons/home.svg";
-import search from "./assets/icons/search.svg";
+import logo from './../assets/logo.png';
+import home from "./../assets/icons/home.svg";
+import search from "./../assets/icons/search.svg";
 
- const Navbar=()=>
+ const Navbar = () =>
 {
      return (
         <nav className='nav' >
