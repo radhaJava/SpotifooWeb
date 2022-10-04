@@ -16,17 +16,22 @@ import Search from './components/Search';
 export default function App() {
   // local state
   const [song,setSong]= useState(data);
-  const Cards = song.map((item) => (
-    <Card
-      key={item.id}
-      title={item.title}
-      genre={item.genre}
-      artist={item.artist}
-      album={item.album}
-      pathToAlbum ={item.pathToAlbum}
-      pathToMusic={item.pathToMusic}
-    />
-  ));
+const getSong =() =>{
+  fetch('./data/music.json',{headers:{'Content-Type':'application/json','Accept':'application/json'}})
+  .then(function(response){console.log(response) 
+    return response.json();}).then(function(myJson){console.log(myJson);setSong(myJson)});
+}
+  // const Cards = song.map((item) => (
+  //   <Card
+  //     key={item.id}
+  //     title={item.title}
+  //     genre={item.genre}
+  //     artist={item.artist}
+  //     album={item.album}
+  //     pathToAlbum ={item.pathToAlbum}
+  //     pathToMusic={item.pathToMusic}
+  //   />
+  // ));
 
   useEffect(()=>{
    
@@ -39,7 +44,8 @@ export default function App() {
       <div className="App">
         <BrowserRouter>
         <NavBar />
-        {Cards}
+        
+        {song &&song.length>0 && song.map((item)=><p>{item.title}</p>)}
           <Routes>
             <Route path="/" element={<Home />}  />
             <Route path="/search" element={<Search />} />
