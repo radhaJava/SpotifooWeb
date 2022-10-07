@@ -5,6 +5,11 @@ import "./../styles/Footer.css";
 
 
 const Footer = () => {
+  const handleClick =()=>{
+    <audio className="audio">
+          <source src="http://localhost:8080/music/andy-you-are-a-star.mp3"></source>
+        </audio>
+  }
   return (
     <div className="musicplayer">
      
@@ -15,8 +20,11 @@ const Footer = () => {
               <text className="artist-name">Artist Name</text>
             </div>
             </article>
-         <button className="music-button">
+         <button className="music-button" onClick={handleClick}>
              <img className= "image-play"src={play}/>
+             <audio className="audio">
+          <source src="{`http://localhost:8080/${props.carddetails.pathToMusic}`}"></source>
+        </audio>
          </button>
         
      

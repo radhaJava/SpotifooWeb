@@ -15,7 +15,7 @@ const Page = (props: any) => {
              
             <img className="image card-img-top"
                            src={`http://localhost:8080/${props.carddetails.pathToAlbum}`}/>
-           <h3 className="h3 card-title">{props.carddetails.title}</h3>
+           <h3 className="h3 card-title"  >{props.carddetails.title}</h3>
            </div>
           </article>
       
