@@ -32,6 +32,7 @@ To test if everything is ok, open a web browser and type the server address (htt
 ## Run 
 In VSC editor open the path where the file spotifoo_frontend is located  and  also open  the local server SpotifooServer path where it is located  in cmd prompt 
 --- then   type npm start( in both)
+---if getting react-scripts error - try : npm install then npm start in the spotifoo_frontend
  
  ## Test
  The web app opens with home page and you can see the images of song and titles in card and also navigation bar as well as footer . When you click on search button it will take you ti search tab and there some hardcoded 
