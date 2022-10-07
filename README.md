@@ -4,8 +4,17 @@ Spotifoo Web App
 ## About
 
 Spotifoo’s terminal app was a success and now the company Spotifoo is requesting a web-based graphical user interface to start testing if music streaming is a viable idea utilizing real customers!
-## Installation
+## Before Setup
+In order to connect your frontend with our backend, you need to follow these instructions. Otherwise you won't be able to get the songs or their album covers.
+Install the latest Node.js LTS version. Link here
+Clone the server repository. Git repository link
+Run npm install in the project root directory.
+Run npm run start to start the server.
+The server will now start on the url http://localhost:8080 use this url to send your requests.
+To test if everything is ok, open a web browser and type the server address (http://localhost:8080).
 
+## Installation
+     
               Install node.js 
               To create a react app in local:  npx create-react-app app-name –temple typescript
               npm install 
